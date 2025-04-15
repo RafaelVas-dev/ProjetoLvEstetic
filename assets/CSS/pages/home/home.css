@@ -1,0 +1,209 @@
+
+/*-------------------------> Links de navegação <-----------------------------------*/
+.navegacao{
+    margin: auto;
+    height: 7vh;
+    max-width: 50vw;
+    padding: 10px;
+    position: sticky;
+    top: 0%;
+    border-radius: 0px 0px 15px 15px;
+    background-color: #BFBFBF;
+}
+
+.navegacao nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    font-size: 20px;
+
+}
+
+.navegacao nav a{
+    color: #000;
+}
+
+.navegacao nav a:hover{
+    border-bottom: 1px solid #000;
+    transform: translateY(-3px);
+}
+
+/*----------------------------------> Imagem de introdução <-----------------------------------*/
+.conteiner-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteiner-img img{
+    height: 500px;
+    margin: 50px;
+    border-radius: 8px;
+}
+
+.conteiner-img h2{
+    position: absolute;
+    left: 5%;
+    top: 70%;
+    font-size: 3.7em;
+    line-height: 60px;
+    text-shadow: -6px -4px 0px #afadad;
+    background-image:linear-gradient(to left, #000000, #111010);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/*------------------>  Seção SOBRE <-----------------------*/
+
+.sobre{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.titulo{
+    height: 200px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 1.5em;
+}
+
+.sobre span{
+    font-style: italic;
+    font-family: 'krub regular';
+}
+
+.sobre .titulo .linha{
+    display: flex;
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+}
+
+.sobre .sobre-info{
+    padding: 10px;
+    margin: 20px auto;
+    text-align: center;
+    text-indent: 50px;
+    font-size: 23px;
+    word-spacing: 1px;
+}
+
+.sobre .sobre-vant{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    margin: 20px;
+}
+
+.sobre-vant h3{
+    font-weight: bold;
+    font-size: 1.7em;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.sobre-list{
+    align-self: start;
+    font-size: 20px;
+    text-align: start;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    word-spacing: 1px;
+}
+
+.sobre .sobre-vant .sobre-list ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.list{
+    display: flex;
+    text-align: start;
+    align-items: center;
+    padding: 20px;
+    overflow: auto;
+    margin: auto;
+}
+
+.list-icon{
+    color: #000;
+    font-size: 45px;
+    float: left;
+    padding: 10px;
+    margin: 10px;
+}
+
+#destaque{
+    text-shadow: 0.5px 0.5px 40px #BFBFBF;
+    font-size: 23px;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(to right, yellow, #ecca0a, rgb(243, 188, 9));
+}
+
+/*-------------------------------> Seção SERVIÇOS <---------------------------------*/
+
+.servicos{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 50px;
+}
+
+.servicos .titulo .linha{
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+}
+
+
+.conteiner-serv{
+    height: 400px;
+    width: 400px;
+    margin: auto;
+}
+
+.conteiner-serv a{
+    color: #000;
+}
+
+.conteiner-serv h3{
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+}
+
+.conteiner-serv .ilustracao img{
+    width: 100%;
+    border-radius: 6px;
+}
+
+.conteiner-serv p{
+    font-size: 17px;
+    text-align: center;
+    padding: 10px 5px;
+    color: #000;
+    border-bottom: 1px solid #000;
+}
+
+.conteiner-serv:hover{
+    border-radius: 8px;
+    background: #bfbfbfa4;
+    box-shadow: 1px 1px 10px #000;
+}
+
+.conteiner-serv p:hover{
+    border-bottom: none;
+}

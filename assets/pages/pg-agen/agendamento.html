@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!----- Link Icons ------>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!------- Links CSS ------->
+    <link rel="stylesheet" href="/assets/CSS/global/style.css">
+    <link rel="stylesheet" href="/assets/CSS/pages/agendamento/agendamento.css">
+    <title>Agendamento de serviço</title>
+</head>
+<body>
+
+    <!----------------- Cabeçalho ------------------>
+    <header>
+        <h1 id="titulo">LV Estetic</h1>
+        <div class="conteiner">
+            <img src="/assets/imagens/Logo/logoTrsp.png" width="300px" height="150px">
+        </div>
+        <div class="social-contato">
+            <a href="https://wa.me/5511940459160" target="_blank">
+                <button class="whatsapp">
+                    <i class='bx bxl-whatsapp'></i>
+                </button>
+            </a>
+            <a href="https://www.instagram.com/lv_martelinho/" target="_blank">
+                <button class="instagram">
+                    <i class='bx bxl-instagram'></i>
+                </button>
+            </a>
+        </div>
+    </header>
+
+    <!------------------------------------ Formulário ------------------------------------>
+
+        <form action="" id="form" novalidate>
+
+            <!------------------ Dados --------------------->
+            <fieldset>
+                <h2>Preencha seus dados</h2>
+
+                <div class="form-dados">
+                    <label for="name">Nome</label>
+                    <input type="text" id="name" placeholder="Digite seu nome" autocomplete="off" required>
+                    <i class='bx bxs-check-circle'></i>
+                    <i class='bx bx-x-circle'></i>
+                </div>
+
+                <div class="form-dados">
+                    <label for="num">Celular</label>
+                    <input type="number" id="num" placeholder="Digite seu numero" autocomplete="off" required>
+                    <i class='bx bxs-check-circle'></i>
+                    <i class='bx bx-x-circle'></i>
+                </div>
+
+                <div class="form-dados">
+                    <label for="carro">Carro</label>
+                    <input type="text" id="carro" placeholder="Digite qual é seu carro" autocomplete="off" required>
+                    <i class='bx bxs-check-circle'></i>
+                    <i class='bx bx-x-circle'></i>
+                </div>
+
+                <div class="form-dados">
+                    <label for="data">Qual dia gostaria de realizar o serviço?</label>
+                    <input type="datetime-local" id="data" placeholder="Digite seu nome" autocomplete="off" required >
+                    <i class='bx bxs-check-circle'></i>
+                    <i class='bx bx-x-circle'></i>
+                </div>
+
+                <div class="form-dados">
+                    <label for="msg">Mensagem</label>
+                    <textarea id="msg" placeholder="Deixe uma mensagem"></textarea>
+                    <i class='bx bxs-check-circle'></i>
+                    <i class='bx bx-x-circle'></i>
+                </div>
+
+            </fieldset>
+
+            <!----------------- Serviços ------------------->
+            <fieldset>
+                <div class="form-select">
+
+                    <h2>Selecione o(s) Serviço Desejado</h2>
+                    <div class="form-serv">
+                        <label for="martelinho">Martelinho de ouro</label>
+                        <input type="checkbox" id="martelinho">
+                    </div>
+
+                    <div class="form-serv">
+                        <label for="polimento">Polimento</label>
+                        <input type="checkbox" id="polimento">
+                    </div>
+
+                    <div class="form-serv">
+                        <label for="lavagem">Lavagem Detalhada</label>
+                        <input type="checkbox" id="lavagem">
+                    </div>
+
+                    <div class="form-serv">
+                        <label for="cristalizacao">Cristalização</label>
+                        <input type="checkbox" id="cristalizacao">
+                    </div>
+
+                    <div class="form-serv">
+                        <label for="vitrificacao">Vitrificação</label>
+                        <input type="checkbox" id="vitrificacao">
+                    </div>
+
+                </div>
+                
+            </fieldset>
+
+            <input type="submit" value="Enviar" class="enviar">
+
+        </form>
+
+    <div id="sucessoEnvio" class="enviado">
+        <div class="enviado-card">
+            <span class="close-button">&times;</span>
+            <h2>Enviada!</h2>
+            <p>Sua solicitação foi enviada com sucesso!</p>
+            <p>Caso tenha qualquer dúvida nos chame nas Redes Sociais</p>
+            
+            <div class="social-contato">
+                <a href="https://wa.me/5511940459160" target="_blank">
+                        <i class='bx bxl-whatsapp'></i>
+                </a>
+                <a href="https://www.instagram.com/lv_martelinho/" target="_blank">
+                    <i class='bx bxl-instagram'></i> 
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!--------------------------- Footer ---------------------------->
+
+    <footer>
+        <h4>Nossa localização <i class='bx bx-map'></i></h4>
+
+        <p class="rua">Rua costa barros, 1893 - Vila Alpina</p>
+        
+        <div class="linha-footer"></div>
+        <p>&copy LV Estetic | todos os direitos reservados</p>
+    
+    </footer>
+
+    <script src="/assets/JS/index.js"></script>
+</body>
+</html>
