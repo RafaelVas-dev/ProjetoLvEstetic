@@ -1,0 +1,149 @@
+
+/*------------------------------> Descrição <--------------------------------------*/
+.descricao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+    width: 100vw;
+}
+
+.descricao .desc-titulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 30px;
+    margin: 10px;
+    font-weight: 300;
+}
+
+
+#martelinho:hover{
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(to right, yellow, #ecca0a, rgb(243, 188, 9));
+}
+
+.descricao .desc-info{
+    margin-top: 2em;
+    font-size: 20px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.4px;
+}
+
+/*--------------------------------------> Seção Quando <-----------------------------------------*/
+.quando{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    padding: 30px;
+}
+
+.quando h2{
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+}
+
+.quando h4{
+    font-size: 20px;
+    align-self: self-start;
+    text-align: start;
+    padding: 20px 0px 5px;
+}
+
+.quando ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.quando .list{
+    display: flex;
+    text-align: start;
+    align-items: center;
+    font-size: 20px;
+    padding: 10px;
+    overflow: auto;
+}
+
+.quando .list .list-icon{
+    color: #f80303;
+    font-size: 45px;
+    float: left;
+    padding: 10px;
+    margin: 10px;
+}
+
+
+/*---------------------------------> Seção Vantagens <----------------------------------*/
+
+
+.vantagens{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    padding: 30px;
+}
+
+
+.vantagens h2{
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+}
+
+
+.vantagens ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    align-self: self-start;
+}
+
+
+.vantagens .list{
+    display: flex;
+    text-align: start;
+    align-items: center;
+    font-size: 20px;
+    padding: 10px;
+    overflow: auto;
+}
+
+.vantagens .list .list-icon{
+    color: #00d600;
+    font-size: 45px;
+    float: left;
+    padding: 10px;
+    margin: 10px;
+}
+
+
+
+
+
+
+
+/*Imagem*/
+/*
+.conteiner-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteiner-img img{
+    height: 90vh;
+    margin: 3rem;
+    border-radius: 8px;
+}

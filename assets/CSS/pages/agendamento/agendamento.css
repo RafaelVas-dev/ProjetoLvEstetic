@@ -1,0 +1,214 @@
+/*PAGINA DE Agendamento*/
+
+body{
+    background-color: #24232396;
+}
+
+fieldset{
+    border: none;
+    padding: 1rem 0;
+}
+
+/*----------------------> Fomulário <--------------------------*/
+/*---------> DADOS <---------*/
+
+form{
+    margin: 1rem auto;
+    background-color: #fff;
+    max-width: 780px;
+    padding: 1.7rem;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+form h2{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.form-dados{
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+
+.form-dados label{
+    font-size: 16px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-dados input, .form-dados textarea{
+    width: 100%;
+    padding: 1.5rem;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    outline: none;
+    resize: none;
+}
+
+input[type="datetime-local"]::-webkit-calendar-picker-indicator{
+    display: none;
+}
+
+.enviar{
+    width: 100%;
+    border: none;
+    padding: 16px;
+    background-color: #0D0D0D;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: all 0.3s ease;
+}
+
+.enviar:hover{
+    background-color: #0d0d0def;
+}
+
+/*---- Icone ----*/
+.form-dados .bx{
+    position: absolute;
+    top: 50%;
+    right: 2%;
+    font-size: 30px;
+    float: right;
+    display: none;
+}
+
+/*---- Icone sucesso ----*/
+
+.form-dados.form-dados.sucesso .bx.bxs-check-circle{
+    color: #2ecc71;
+    display: block;
+}
+
+.form-dados.sucesso input, .form-dados.sucesso textarea{
+    border-color: #2ecc71;
+}
+
+/*---- icone erro ----*/
+
+.form-dados.erro .bx.bx-x-circle{
+    color: #f72525;
+    display: block;
+}
+
+.form-dados.erro input, .form-dados.erro textarea{
+    border-color: #f72525;
+}
+
+
+/*--------------> Serviços <-----------------*/
+.form-select{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.form-select h2{
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.form-serv{
+    align-self: self-start;
+    margin-bottom: 2rem;
+    text-align: start;
+}
+
+.form-serv label{
+    font-size: 25px;
+    padding: 5px;
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #555;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s ease;
+  }
+
+  input[type="checkbox"]:checked {
+    background-color: #2ecc71;
+    border-color: #2ecc71;
+  }
+
+  input[type="checkbox"]:checked::after {
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: 1px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+
+/*----------> MSG Enviado <------------*/
+.enviado{
+    display: none;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: #bfbfbf5d;
+}
+
+.enviado-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    width: 80%;
+    border:  1px solid #ddd;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+.enviado-card .social-contato{
+    margin: 0.5rem auto;
+}
+
+.enviado-card .social-contato a{
+    font-size: 2.5rem;
+    color: #000;
+}
+
+.enviado-card .social-contato a:hover{
+    transform: scale(1.2);
+}
+
+
+.close-button{
+    color: #242323;
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.close-button:hover{
+    color: #000;
+    transform: scale(1.2);
+}
